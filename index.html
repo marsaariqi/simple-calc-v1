@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="calculator.js" defer></script>
+  <style>
+    .button-style {
+      background-color: #f0f0f0;
+      color: #333;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      border-radius: 0.25rem;
+      transition: background-color 0.3s ease;
+    }
+  
+    .button-style:hover {
+      background-color: #dcdcdc;
+    }
+  
+    .operator {
+      background-color: #ffd700; /* Yellow */
+      color: #333;
+      transition: background-color 0.3s ease;
+    }
+  
+    .operator:hover {
+      background-color: #ffea00; /* Lighter yellow */
+    }
+    .operator:active{
+      background-color: #333;
+    }
+  </style>
+</head>
+<body class="flex flex-col justify-center items-center h-screen bg-gradient-to-r from-green-400 to-blue-500 ">
+  <h1 class="text-red-50 text-4xl mb-4">Calc</h1>
+  <div class="grid grid-cols-4 gap-1 bg-gray-400/90 p-8 ">
+    <input type="text" id="result" class="col-start-1 col-end-5 h-14 mb-2 text-right p-4 text-lg font-bold">
+    <button class="button-style">1</button>
+    <button class="button-style">2</button>
+    <button class="button-style">3</button>
+    <button class="button-style operator">+</button>
+    <button class="button-style">4</button>
+    <button class="button-style">5</button>
+    <button class="button-style">6</button>
+    <button class="button-style operator">-</button>
+    <button class="button-style">7</button>
+    <button class="button-style">8</button>
+    <button class="button-style">9</button>
+    <button class="button-style operator">*</button>
+    <button class="button-style">0</button>
+    <button class="button-style">.</button>
+    <button class="button-style">+/-</button>
+    <button class="button-style operator">/</button>
+    <button class="button-style">AC</button>
+    <button class="button-style operator col-end-5 col-span-3">=</button>
+  </div>
+</body>
+</html>
